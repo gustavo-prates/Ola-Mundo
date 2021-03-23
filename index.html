@@ -7,32 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro teste de site utilizando repositório</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style rel="stylesheet">
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-        }
-        
-        body {
-            background: linear-gradient(to bottom, #129b1d, #93e4a5);
-            background-attachment: fixed;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="mycss/mystyle.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center">
-            <h1>Site em repositório GIT & GitHub</h1>
-            <hr/>
-            <p>Trabalhando no meu primeiro site utilizando GIT e GitHub!</p>
-            <h2>Conteúdo 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem alias harum! Dolore, ab sequi saepe eius minus sapiente. Aspernatur labore error facilis cumque natus sit saepe reiciendis quo maiores?</p>
-        </div>
-    </div>
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgba(71, 85, 94, 0.5);">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<aside class="container" style="border: 1px solid black;">Capa</aside>
+<section class="container" style="border: 1px solid black;">Conteúdo</section>
+<footer class="container" style="border: 1px solid black;">Rodapé</footer>
 
 </html>
