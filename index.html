@@ -24,40 +24,46 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="blog-header-logo" src="img/logo_transparent.png" alt=""></a>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_transparent.png">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end bg-dark" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quem Sou?</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cadastre-se</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projetos
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item dropdown-menu-dark" href="#">Mini Game - Labirinto</a></li>
+                            <li><a class="dropdown-item dropdown-menu-dark" href="#">Dashboard de usuário</a></li>
+                            <li><a class="dropdown-item dropdown-menu-dark" href="#">Rede social - devbook</a></li>
+                            <li>
+                            </li>
+                            <li><a class="dropdown-item dropdown-menu-dark" href="#">Ajude no desenvolvimento dos projetos</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-secondary btn-login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Login
+                    Deixe seu comentário
                 </button>
 
                 <!-- Modal -->
                 <form action="">
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content">
+                            <div class="modal-content modal-bg">
                                 <div class="modal-header">
-                                    <h5 id="staticBackdropLabel">Acesse sua conta</h5>
+                                    <h5 style="color: #fff;" id="staticBackdropLabel">Deixe seu comentário abaixo</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -65,12 +71,12 @@
                                         <input type="email" name="" class="form-control" id="email" placeholder="Digite seu e-mail">
                                     </div>
                                     <div class="form-group modal-login">
-                                        <input type="password" name="" class="form-control" id="email" placeholder="Digite sua senha">
+                                        <textarea type="text" name="" class="form-control" id="email" placeholder="Deixe aqui seu comentário. Educadamente! :)"></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Login</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    <button type="submit" class="btn btn-light">Enviar</button>
                                 </div>
                             </div>
                         </div>
@@ -86,23 +92,34 @@
                 <div class="col-md-8">
                     <div class="capa">
                         <div class="cont-capa">
-                            <h1>Conteúdo do blog principal</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium quibusdam odit quis sint beatae iste cupiditate modi eos repudiandae accusantium mollitia, unde natus, dolorem laborum ullam esse aperiam cumque!</p>
+                            <h1>Olá, seja muito bem vindo!</h1>
+                            <p>
+                                Meu nome é Gustavo, e sou um apaixonado por técnologia e por desenvolvimento web e de aplicações.
+                            </p>
+                            <p>
+                                Este "PortiBlog" como apelidei, foi e está em constante desenvolvimento a fim de apresentar meus projetos pessoais e profissionais, materiais para estudos e códigos livres, afim de gerar interações benéficas para um crescimento mutuo entre desenvolvedores
+                                web e back-end.
+                            </p>
+                            <p>
+                                Sinta-se a vontade navegar, e caso tenha alguma sugestão para este projeto em si, ou para outros, por favor as indique nas interações deste próprio site ou clicando no link abaixo que o levará ao meu perfil no <strong style="color: orangered;">GitHub</strong>.
+                            </p>
+                            <p>Obrigado!</p>
+                            <a href="https://github.com/gustavo-prates">GitHub Profile</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-cont1" src="img/logo.png">
+                    <img class="img-cont1" src="img/logo-transparent.png">
                 </div>
             </div>
         </div>
     </main>
 
 
-
-    <footer class="fixed-bottom blog-footer">
+    <!-- Inserir ao finalizar o site ... 
+    <footer class="blog-footer">
     </footer>
-
+    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 

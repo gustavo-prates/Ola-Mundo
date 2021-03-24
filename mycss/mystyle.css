@@ -19,6 +19,9 @@ body {
     overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    background: url(../img/bgpg.png);
+    background-color: #47555e;
+    background-attachment: fixed;
 }
 
 h1,
@@ -32,6 +35,7 @@ h6 {
 
 nav {
     margin-bottom: 10px;
+    height: 90px;
 }
 
 footer {
@@ -46,6 +50,10 @@ footer {
     margin: 15px 5px;
 }
 
+.modal-bg {
+    background-color: #727272;
+}
+
 .capa {
     display: table;
     width: 100%;
@@ -56,6 +64,32 @@ footer {
     text-align: left;
     display: table-cell;
     vertical-align: middle;
+}
+
+.cont-capa,
+h1,
+p,
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.cont-capa>a {
+    font-weight: 900;
+    -webkit-transition: 0.10s ease-in;
+    -moz-transition: 0.10s ease-in;
+    -o-transition: 0.10s ease-in;
+    transition: 0.10s ease-in;
+}
+
+.cont-capa>a:hover {
+    font-weight: 900;
+    color: #6c757d;
+    text-shadow: 2px 2px #000;
+    -webkit-transition: 0.10s ease-in;
+    -moz-transition: 0.10s ease-in;
+    -o-transition: 0.10s ease-in;
+    transition: 0.10s ease-in;
 }
 
 .img-cont1 {
