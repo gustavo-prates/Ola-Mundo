@@ -9,10 +9,15 @@
     <meta name="generator" content="Hugo 0.82.0">
     <meta name="modify" content="Gustavo 0.1.0">
     <title>PortiBlog - Gustavo Faria</title>
+    <script type="text/javascript" src="myjs/scriptcalc.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- MyCss-->
     <link rel="stylesheet" href="mycss/mystyle.css">
+    <!-- CSS do botão backspace-->
+    <link href='https://css.gg/backspace.css' rel='stylesheet'>
+    <!-- CSS da Calculadora-->
+    <link rel="stylesheet" href="mycss/calccss.css">
 
 
     <!-- Favicon -->
@@ -87,28 +92,72 @@
 
     </nav>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="capa">
-                        <div class="cont-capa">
-                            <h1>Olá, seja muito bem vindo!</h1>
-                            <p>
-                                Meu nome é Gustavo, eterno aprendiz em técnologia e desbravando este novo muldo do desenvolvimento web e de aplicações.
-                            </p>
-                            <p>
-                                Este "PortiBlog" como apelidei, foi e está em constante desenvolvimento a fim de apresentar meus projetos pessoais e profissionais, materiais para estudos e códigos livres.
-                            </p>
-                            <p>
-                                Sinta-se a vontade navegar, e caso tenha alguma sugestão para este projeto em si, ou para outros, por favor as indique no meu perfil do
-                                <a href="https://github.com/gustavo-prates"><strong style="color: orangered;">GitHub</strong></a>.
-                            </p>
-                            <p>Obrigado!</p>
-                        </div>
-                    </div>
+        <div class="container contmain">
+            <div class="calculadora">
+                <h3>Calculadora</h3>
+                <hr>
+                <div class="visor">
+                    <input autofocus type="text" id="resultado">
                 </div>
-                <div class="col-md-4">
-                    <img class="img-cont1" src="img/logo-transparent.png">
+                <div class="botoes">
+                    <span>
+                        <button class="btn btn-light" onclick="clean()">C</button>
+                    </span>
+                    <span>
+                        <button style="height: 38px;" class="btn-bkspace btn btn-light " onclick="back()">
+                            <i style="margin-left: 5px;" class="gg-backspace"></i></i>
+                        </button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '/') ">&divide;</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '*') ">x</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '7') ">7</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '8') ">8</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '9') ">9</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '-') ">-</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '4') ">4</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '5') ">5</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '6') ">6</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '+') ">+</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '1') ">1</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '2') ">2</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light" onclick="insert( '3') ">3</button>
+                    </span>
+                    <span style="position: absolute; margin-left: 6px;">
+                        <button style="height: 84px;" class="btn btn-light" onclick="calcular()">=</button>
+                    </span>
+                    <div>
+                        <span>
+                            <button style="width: 105px;" class="btn btn-light" onclick="insert( '0') ">0</button>
+                        </span>
+                        <span>
+                            <button class="btn btn-light" onclick="insert( '.') ">.</button>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
